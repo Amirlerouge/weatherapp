@@ -10,3 +10,5 @@ Playing around with openweathermap API's and tilt.js library.
 - The side menu is absolutely not aligned, and the sizing of the thing is avg.
 
 ![](usage.gif)
+
+-> amirlerouge.github.io/weatherapp
