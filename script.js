@@ -23,7 +23,7 @@ if (number <= 10){
   }
 
   async function dubaiTemp() {
-      let response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=dubai&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
+      let response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=dubai&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
       let commits = await response.json();
       let x = commits;
       return x;
@@ -31,14 +31,14 @@ if (number <= 10){
 
 
   async function zurichTemp() {
-      let response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=zurich&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
+      let response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=zurich&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
       let commits = await response.json();
       let x = commits;
       return x;
   };
 
   async function parisTemp() {
-      let response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=paris&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
+      let response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=paris&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
       let commits = await response.json();
       let x = commits;
       return x;
@@ -52,7 +52,7 @@ if (number <= 10){
   };
 
   async function tokyoTemp() {
-      let response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=tokyo&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
+      let response = await fetch("https://api.openweathermap.org/data/2.5/weather?q=tokyo&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
       let commits = await response.json();
       let x = commits;
       return x;
