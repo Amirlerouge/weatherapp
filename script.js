@@ -38,7 +38,7 @@ if (number <= 10){
   };
 
   async function parisTemp() {
-      let response = await fetch("http://api.openweathermap.org/data/2.5/weather?q=paris&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
+      let response = await fetch("https://api.openweathermap.org/data/2.5/weather?zip=75000,france&units=metric&appid=40fc162ecb4055782ccc61eaff73bf4b")
       let commits = await response.json();
       let x = commits;
       return x;
