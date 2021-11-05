@@ -11,4 +11,4 @@ Playing around with openweathermap API's and tilt.js library.
 
 ![](usage.gif)
 
--> amirlerouge.github.io/weatherapp
+-> https://amirlerouge.github.io/weatherapp/
