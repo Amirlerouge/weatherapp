@@ -1,13 +1,113 @@
-body {
-    background-color: lightblue;
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700);
+body{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    font: 100% Roboto, sans-serif;
+    background: url 50% 50% no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin: 0;
+}
+.box {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+    will-change: transform;
+    width: 600px;
+    height: 299px;
+}
+.cold{
+    background: rgb(34,193,195);
+    background: linear-gradient(57deg, rgb(34, 176, 195) 0%, rgb(4, 51, 104) 100%);
+}
+.normal{
+    background: rgb(34,193,195);
+    background: linear-gradient(57deg, rgb(34, 176, 195) 0%, rgba(253,187,45,1) 100%);
+}
+.hot{
+    background: rgb(34,193,195);
+    background: linear-gradient(57deg, rgb(205, 218, 30) 0%, rgb(243, 96, 12) 100%);
+}
+h1 {
+    padding: 20px;
+   /* align-content: center;
+    */
+    font-family: 'Inter', sans-serif;
+    color: #f1f1f1;
+   /* position: absolute;
+    */
+   /* top: 27%;
+    */
+   /* right: 7%;
+    */
+   /* left: 23%;
+    */
+    margin: 0;
+   /* display: flex;
+    */
+    font-size: 6em;
+}
+nav {
+    background: white;
+    color: rgba(0, 0, 0, 0.87);
+    -webkit-clip-path: circle(24px at 30px 24px);
+    clip-path: circle(24px at 32px 24px);
+    -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+    transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+}
+nav:hover {
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.75s;
+    transition-duration: 0.75s;
+    -webkit-clip-path: circle(390px at 225px 24px);
+    clip-path: circle(390px at 150px 24px);
+}
+a {
+    display: block;
+    line-height: 50px;
+    padding: 0 20px;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Josefin Sans';
+}
+a:hover {
+    background: #C4CEFF;
+}
+a:active {
+    background: #ffca28;
+}
+.navicon {
+    padding: 24px 20px;
+    cursor: pointer;
+    -webkit-transform-origin: 32px 24px;
+    -ms-transform-origin: 32px 24px;
+    transform-origin: 32px 24px;
+}
+.navicon div {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+}
+.navicon div:before, .navicon div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.87);
+    position: absolute;
+}
+.navicon div:before {
+    top: -7px;
+}
+.navicon div:after {
+    top: 7px;
+}
