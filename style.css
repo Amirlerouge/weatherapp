@@ -17,7 +17,7 @@ body{
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
     will-change: transform;
     width: 600px;
-    height: 299px;
+    height: 296px;
 }
 .cold{
     background: rgb(34,193,195);
@@ -85,7 +85,7 @@ a:active {
     background: #ffca28;
 }
 .navicon {
-    padding: 24px 20px;
+    padding: 22px 22px;
     cursor: pointer;
     -webkit-transform-origin: 32px 24px;
     -ms-transform-origin: 32px 24px;
